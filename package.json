@@ -1,0 +1,32 @@
+{
+  "name": "opdracht2themanpm",
+  "version": "1.0.0",
+  "description": "Leerjaar 1, periode 4, Wordpress thema",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LeroyAndrade/L1-P4-WPthema.git"
+  },
+  "keywords": [
+    "Leerjaar",
+    "1",
+    "periode",
+    "4",
+    "Wordpress",
+    "Thema"
+  ],
+  "author": "Andrade Leroy, Theo den Blanken",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/LeroyAndrade/L1-P4-WPthema/issues"
+  },
+  "homepage": "https://github.com/LeroyAndrade/L1-P4-WPthema#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
