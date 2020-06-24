@@ -6,9 +6,6 @@
     <meta name="description" content="Wordpress, website,word press">
     <meta name="keywords" content="Wordpress, website,word press">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
     <title><?php bloginfo("name"); ?></title>
       <?php wp_head(); ?>
 
@@ -18,6 +15,18 @@ https://developer.wordpress.org/themes/basics/including-css-javascript/
 -->
   </head>
 
-
   <body>
-    <h1><a href="<?php echo home_url(); ?>"> <?php bloginfo("name") ?></a></h1>
+    <header>
+        <nav>
+           <?php wp_nav_menu(
+             array(
+               'theme_location' => 'hoofdmenu'
+             ) ) ;?>
+        </nav>
+
+        <div class="jumbotron">
+        </div>
+          <h1 class="display-4"><a href="<?php echo home_url(); ?>"> <?php bloginfo("name"); ?></a></h1>
+          <p class="lead"><?php bloginfo('description');?></p>
+        </div>
+      </header>
