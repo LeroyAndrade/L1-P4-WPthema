@@ -81,3 +81,8 @@ color: white;
 .widget-aside h3{
 font-size: .7em;
 }
+
+/*Metadata posts*/
+.post-categories{
+  list-style-type: none;
+}

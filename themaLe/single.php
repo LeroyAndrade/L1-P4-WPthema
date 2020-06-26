@@ -5,25 +5,44 @@ opdr 4-->
 <?php get_header(); ?>
 <div class="container">
   <div class="row">
-      <main class="col-md-8">
+      <main class="col-md-9">
+          <div class="row">
+            <?php
+              if ( have_posts() ) : //if true
+                  while( have_posts()) : the_post(); ?>
 
-          <?php
-            if ( have_posts() ) : //if true
-                while( have_posts()) : the_post(); ?>
-                    <p><?php the_title();?></p>
-                    <p><?php the_content();?></p>
+                  <!--Metadata-->
+                    <div class="col-md-3 p4 text-right small bg-light">
+                      <p>Dit bericht is geplaatst door: <?php echo the_author(); ?> </p>
+                      <p>op: <?php the_time('j F Y'); ?></p>
+                      <p>In volgende categorie: <?php the_category(); ?></p>
+                    </div>
 
-                <?php
-                endwhile;
-              else: ?>
-                <p>Geen berichten gevonden.</p>
-          <?php endif; ?>
+                  <!--Inhoud van de post-->
+                  <div class="col-md-9">
+                      <p><?php the_title();?></p>
+                      <p><?php the_content();?></p>
+                      <hr>
+                      <article class="bg-light p-4">
+                        <?php
+                        // If comments are open or we have at least one comment, load up the comment template.
+                         if ( comments_open() || get_comments_number() ) :
+                             comments_template();
+                         endif;
+                        ?>
+                      </article>
+
+                  <?php
+                  endwhile;
+                else: ?>
+                  <p>Geen berichten gevonden.</p>
+            <?php endif; ?>
+          </div>
+
       </main>
 
-  <aside class="bg-light col-md-4 p-4">
-      <div id="sidebar-primary" class="sidebar">
+  <aside class="bg-light col-md-3 p-4">
         <?php dynamic_sidebar( 'aside' ); ?>
-      </div>
 
   </aside>
 </div>
