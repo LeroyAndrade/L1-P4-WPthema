@@ -11,6 +11,6 @@ Het wachtwoord is met u gedeeld in TEAMS, wel heb ik het voor het gemak even ver
 * menu + dropdown bij mobile
 * widgets
 * kolommen 
-* search + category
+* search & category
 + meta
 + single.php + font
