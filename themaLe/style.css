@@ -1,0 +1,83 @@
+/*Wordpress zoekt specifiek naar styles.css en mag geen ander naam bevatten
+
+Theme Name: Twenty Twenty
+Theme URI: http://30168.hosts2.ma-cloud.nl/wp/leerjaar1/cms/wp-content/themes/themaL
+Author: the WordPress team
+Author URI: wp/leerjaar1/cms/wp-content/themes/themaL
+Description: Wordpress thema
+Tags: blog, wordpress
+Requires at least: 5.4
+Tested up to: 5.4
+Requires PHP: 7.3.18
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+body{
+  font-family: sans-serif;
+  background-color: #F1F1F1;
+  display: grid;
+  min-height:100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+/*Open Sans*/
+.jumbotron h1, h2, h3, h4, h5, .navbar-brand{
+  font-family: 'Open Sans', sans-serif;
+}
+/*Validatie icons*/
+.validatie img{
+  height: 1em;
+      width: auto;
+      border: 0;
+      margin: 0 .3em;
+}
+
+.jumbotron
+{
+  background-size:cover;
+  color: blue;
+}
+
+.jumbotron a:hover
+{
+  text-decoration: underline;
+  color: inherit;
+}
+
+input{
+  width: 180px;
+}
+
+/*Widget in footer*/
+.widget-footer{
+  font-size: 1.5em;
+}
+
+.widget-footer a{
+color: white;
+}
+
+.widget-footer-titel{
+  font-size:2rem;
+}
+
+.screen-reader-text{
+  display: none;
+}
+.widget-titel{
+  font-size:.5em;
+}
+.widget-aside{
+  padding: 1em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid black;
+}
+
+.widget-aside h3{
+font-size: .7em;
+}
