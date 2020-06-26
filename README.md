@@ -8,7 +8,7 @@ Het wachtwoord is met u gedeeld in TEAMS, wel heb ik het voor het gemak even ver
 7 punten:
 * online-Github
 * CSS gekoppeld
-* menu
+* menu + dropdown bij mobile
 * widgets
 * kolommen 
 * search + category
