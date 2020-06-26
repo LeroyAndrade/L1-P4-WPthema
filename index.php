@@ -14,6 +14,9 @@ opdr 4-->
                 <article class="col-md-6">
                   <p><a href="<?php the_permalink();?>"><?php the_title();?></a></p>
                   <p><?php the_excerpt();?></p>
+                  <div class="text-center p-4">
+                    <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Lees meer ...</a>
+                  </div>
                 </article>
               <?php
               endwhile; else: ?>
