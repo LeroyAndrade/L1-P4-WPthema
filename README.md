@@ -5,7 +5,7 @@ Leerjaar 1-Periode 4-Wordpress thema
 
 Het wachtwoord is met u gedeeld in TEAMS, wel heb ik het voor het gemak even verwijderd.
 
-7 punten:
+8 punten:
 * online-Github
 * CSS gekoppeld
 * menu + dropdown bij mobile
@@ -13,3 +13,4 @@ Het wachtwoord is met u gedeeld in TEAMS, wel heb ik het voor het gemak even ver
 * kolommen 
 * search + category
 + meta
++ single.php + font
