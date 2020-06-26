@@ -37,7 +37,13 @@ https://developer.wordpress.org/themes/basics/including-css-javascript/
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
         ?>
+        <a href="<?php echo home_url();?>">
+          <img style="width: 100px;"src="<?php echo get_template_directory_uri() . '/splash/logoL.png';?> " alt="Logo ">
+        </a>
   </div>
+
+
+
 </nav>
         <div class="jumbotron" style="background-repeat: no-repeat;background-image: url(<?php echo get_template_directory_uri() . '/splash/download.jpg' ?>);">
           <div class="container">

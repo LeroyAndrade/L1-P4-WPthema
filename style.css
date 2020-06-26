@@ -25,6 +25,10 @@ body{
   grid-template-rows: auto 1fr auto;
 }
 
+/*Open Sans*/
+.jumbotron h1, h2, h3, h4, h5, .navbar-brand{
+  font-family: 'Open Sans', sans-serif;
+}
 /*Validatie icons*/
 .validatie img{
   height: 1em;
@@ -46,7 +50,7 @@ body{
 }
 
 input{
-  width: 200px;
+  width: 180px;
 }
 
 /*Widget in footer*/
@@ -56,4 +60,24 @@ input{
 
 .widget-footer a{
 color: white;
+}
+
+.widget-footer-titel{
+  font-size:2rem;
+}
+
+.screen-reader-text{
+  display: none;
+}
+.widget-titel{
+  font-size:.5em;
+}
+.widget-aside{
+  padding: 1em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid black;
+}
+
+.widget-aside h3{
+font-size: .7em;
 }

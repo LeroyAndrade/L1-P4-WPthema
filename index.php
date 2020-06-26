@@ -6,35 +6,33 @@ opdr 4-->
 <div class="container">
   <div class="row">
       <main class="col-md-9 container">
-        <div class="row">
-          <?php
-          if ( have_posts() ) : //if true
-              while( have_posts()) : the_post(); ?>
 
-                <article class="col-md-6">
-                  <p><a href="<?php the_permalink();?>"><?php the_title();?></a></p>
-                  <p><?php the_excerpt();?></p>
-                  <div class="text-center p-4">
-                    <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Lees meer ...</a>
+          <div class="row">
+            <?php
+            if ( have_posts() ) : //if true
+                while( have_posts()) : the_post(); ?>
+
+                  <div class="col-md-6">
+                    <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+                    <div><?php the_excerpt();?></div>
+                    <div class="text-center p-4">
+                      <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Lees meer ...</a>
+                    </div>
                   </div>
-                </article>
-              <?php
-              endwhile; else: ?>
-              <p>Geen berichten gevonden.</p>
-          <?php endif; ?>
 
-        </div>
-
+                <?php
+                endwhile; else: ?>
+                <p>Geen berichten gevonden.</p>
+            <?php endif; ?>
+          </div>
       </main>
 
-  <aside class="bg-light col-md-3">
-    <h3>
-      <div id="sidebar-primary" class="sidebar">
+  <aside class="bg-light col-md-4 p-4">
+
+
         <?php dynamic_sidebar( 'aside' ); ?>
-      </div>
 
 
-    </h3>
   </aside>
 </div>
 </div>

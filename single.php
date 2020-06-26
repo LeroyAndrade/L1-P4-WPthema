@@ -5,36 +5,26 @@ opdr 4-->
 <?php get_header(); ?>
 <div class="container">
   <div class="row">
-      <main class="col-md-9 container">
-        <div class="row">
+      <main class="col-md-8">
+
           <?php
-          if ( have_posts() ) : //if true
-              while( have_posts()) : the_post(); ?>
+            if ( have_posts() ) : //if true
+                while( have_posts()) : the_post(); ?>
+                    <p><?php the_title();?></p>
+                    <p><?php the_content();?></p>
 
-                <article class="col-md-6">
-                  <p><?php the_title();?></p>
-                  <p><?php the_content();?></p>
-                  <div class="text-center p-4">
-                    <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Lees meer ...</a>
-                  </div>
-                </article>
-              <?php
-              endwhile; else: ?>
-              <p>Geen berichten gevonden.</p>
+                <?php
+                endwhile;
+              else: ?>
+                <p>Geen berichten gevonden.</p>
           <?php endif; ?>
-
-        </div>
-
       </main>
 
-  <aside class="bg-light col-md-3">
-    <h3>
+  <aside class="bg-light col-md-4 p-4">
       <div id="sidebar-primary" class="sidebar">
         <?php dynamic_sidebar( 'aside' ); ?>
       </div>
 
-
-    </h3>
   </aside>
 </div>
 </div>
