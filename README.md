@@ -5,13 +5,14 @@ Leerjaar 1-Periode 4-Wordpress thema
 # Github url: https://github.com/LeroyAndrade/L1-P4-WPthema/tree/master/themaLe
 Het wachtwoord is met u gedeeld in TEAMS, wel heb ik het voor het gemak even verwijderd.
 
-9 punten / 10:
-* online-Github
+10 punten / 10:
+* Online-Github
 * CSS gekoppeld
-* menu + dropdown bij mobile
-* widgets
-* kolommen 
-* search & category
-+ meta
-+ single.php + font
-+ reacties + meta
+* Menu
+* Dropdown (bij mobile) + afbeelding header
+* Widgets
++ Single.php + font
+* Kolommen 
++ Reacties + meta
++ Tags
+* Search & category
