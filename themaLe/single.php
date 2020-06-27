@@ -16,6 +16,29 @@ opdr 4-->
                       <p>Dit bericht is geplaatst door: <?php echo the_author(); ?> </p>
                       <p>op: <?php the_time('j F Y'); ?></p>
                       <p>In volgende categorie: <?php the_category(); ?></p>
+                      <p>met als tags
+
+                            <?php
+                              $voor= " ";
+                              $scheiding = " | ";
+                              $na = "";
+                              $id= "";
+                              $tag_list = get_the_tag_list( $voor, $scheiding, $na, $id );
+                              echo $tag_list; ?></p>
+                      <hr>
+                      <?php $vorig_bericht = get_previous_post();
+                          if ( !empty($vorig_bericht)) :?> <p>Vorig bericht</p>
+                              <a href="<?php echo the_permalink($vorig_bericht->ID);?>">
+                              &#x25C0; <?php echo apply_filters('de_titel', $vorig_bericht->post_title); ?></a>
+                      <?php endif; ?>
+                      <hr>
+
+                      <?php $volgend_bericht = get_next_post();
+                          if ( !empty($volgend_bericht)) :?> <p>Volgend bericht</p>
+                              <a href="<?php echo the_permalink($volgend_bericht->ID);?>">
+                              &#x25C0; <?php echo apply_filters('de_titel', $volgend_bericht->post_title); ?></a>
+                      <?php endif; ?>
+
                     </div>
 
                   <!--Inhoud van de post-->

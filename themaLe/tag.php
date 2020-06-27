@@ -5,9 +5,13 @@ opdr 4-->
 <?php get_header(); ?>
 <div class="container">
   <div class="row">
-      <main class="col-md-8 container">
+      <main class="col-md-9 container p-4">
 
-          <div class="row">
+        <p class="row p-4">De berichten met de  <em class="text-primary">
+          <?php echo get_the_archive_title();?>  </em>
+        </p>
+
+          <div class="row p-4">
             <?php
             if ( have_posts() ) : //if true
                 while( have_posts()) : the_post(); ?>
@@ -15,25 +19,28 @@ opdr 4-->
                   <div class="col-md-6">
                     <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                     <div><?php the_excerpt();?></div>
-                    <div class="text-center">
+                    <div class="text-center p-4">
                       <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Lees meer ...</a>
                     </div>
                   </div>
 
                 <?php
                 endwhile; else: ?>
-                <p>Geen berichten gevonden.</p>
+                <p class="p-4">Geen berichten gevonden die lijken op: <em class="text-primary">
+                  <?php echo get_search_query();?>  </em></p>
             <?php endif; ?>
           </div>
       </main>
 
-  <aside class="bg-light col-md-4">
+  <aside class="bg-light col-md-3 p-4">
 
 
         <?php dynamic_sidebar( 'aside' ); ?>
 
 
   </aside>
+
+
 </div>
 </div>
     <?php get_footer(); ?>

@@ -49,6 +49,11 @@ body{
   color: inherit;
 }
 
+.form-control{
+  padding: .375rem .375rem;
+  border-radius: .25rem;
+}
+
 input{
   width: 180px;
 }

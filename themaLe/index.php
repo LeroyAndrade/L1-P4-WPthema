@@ -27,13 +27,15 @@ opdr 4-->
           </div>
       </main>
 
-  <aside class="bg-light col-md-4 p-4">
+  <aside class="bg-light col-md-3 p-4">
 
 
         <?php dynamic_sidebar( 'aside' ); ?>
 
 
   </aside>
+
+
 </div>
 </div>
     <?php get_footer(); ?>
