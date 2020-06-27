@@ -5,9 +5,13 @@ opdr 4-->
 <?php get_header(); ?>
 <div class="container">
   <div class="row">
-      <main class="col-md-9 container">
+      <main class="col-md-9 container p-4">
 
-          <div class="row">
+        <p class="row p-4">De berichten in <em class="text-primary">
+          <?php echo single_cat_title();?>  </em>
+        </p>
+
+          <div class="row p-4">
             <?php
             if ( have_posts() ) : //if true
                 while( have_posts()) : the_post(); ?>
@@ -22,7 +26,8 @@ opdr 4-->
 
                 <?php
                 endwhile; else: ?>
-                <p>Geen berichten gevonden.</p>
+                <p class="p-4">Geen berichten gevonden die lijken op: <em class="text-primary">
+                  <?php echo get_search_query();?>  </em></p>
             <?php endif; ?>
           </div>
       </main>

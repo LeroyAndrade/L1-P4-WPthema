@@ -24,7 +24,7 @@ https://developer.wordpress.org/themes/basics/including-css-javascript/
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Wat Leroy zich mee bezich houd</a>
+    <a class="navbar-brand" href="#"> <img style="width: 100px;" src="<?php echo get_template_directory_uri() . '/splash/logoL.png';?> " alt="Logo ">eroy zijn interesses</a>
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'hoofd-menu',
@@ -37,8 +37,19 @@ https://developer.wordpress.org/themes/basics/including-css-javascript/
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
         ?>
+
+        <form role="search" method="get" id="searchform" class="searchform" action="http://30168.hosts2.ma-cloud.nl/wp/leerjaar1/cms/">
+				<div>
+					<label class="screen-reader-text" for="s">Zoeken naar:</label>
+					<input class="form-control mr-sm-2" type="search" placeholder="Zoeken..." aria-label="Zoeken" value="" name="s" id="s"/>
+					<input class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchsubmit" value="Zoeken"/>
+				</div>
+			</form>
+
+
+
         <a href="<?php echo home_url();?>">
-          <img style="width: 100px;"src="<?php echo get_template_directory_uri() . '/splash/logoL.png';?> " alt="Logo ">
+          <img style="width: 100px;" src="<?php echo get_template_directory_uri() . '/splash/logoL.png';?> " alt="Logo ">
         </a>
   </div>
 

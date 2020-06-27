@@ -5,7 +5,7 @@ opdr 4-->
 <?php get_header(); ?>
 <div class="container">
   <div class="row">
-      <main class="col-md-9 container">
+      <main class="col-md-8 container">
 
           <div class="row">
             <?php
@@ -15,7 +15,7 @@ opdr 4-->
                   <div class="col-md-6">
                     <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                     <div><?php the_excerpt();?></div>
-                    <div class="text-center p-4">
+                    <div class="text-center">
                       <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Lees meer ...</a>
                     </div>
                   </div>
@@ -27,15 +27,13 @@ opdr 4-->
           </div>
       </main>
 
-  <aside class="bg-light col-md-3 p-4">
+  <aside class="bg-light col-md-4">
 
 
         <?php dynamic_sidebar( 'aside' ); ?>
 
 
   </aside>
-
-
 </div>
 </div>
     <?php get_footer(); ?>

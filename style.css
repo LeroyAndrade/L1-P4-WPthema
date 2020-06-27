@@ -49,6 +49,11 @@ body{
   color: inherit;
 }
 
+.form-control{
+  padding: .375rem .375rem;
+  border-radius: .25rem;
+}
+
 input{
   width: 180px;
 }
@@ -80,4 +85,9 @@ color: white;
 
 .widget-aside h3{
 font-size: .7em;
+}
+
+/*Metadata posts*/
+.post-categories{
+  list-style-type: none;
 }
